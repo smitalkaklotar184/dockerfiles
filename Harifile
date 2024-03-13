@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR /tmp
+RUN echo "hi smital" > /tmp/smitalfile
+ENV myname smital
+COPY linuxfile /etc
+ADD devops.tar.gz /home
